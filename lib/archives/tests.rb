@@ -25,8 +25,5 @@ h = first_name.zip(last_name, email)
 h.map! { |el| Hash[el] }.to_a
 # puts h.inspect
 
-a = "Cédric Villani de La Bat".split
-puts a[1..-1]
-# Grouper en arrays multi
-# Puis choper chaque élément du multi qu'on envoie dans un hash
-
+a = "Cédric Villani de La Bat".split[1..-1].join(" ")
+puts a.inspect

@@ -20,7 +20,7 @@ def create_hashes
   h = Hash[get_cryptos_symbols.zip(get_cryptos_values)]
   # Segmentation du hash en plusieurs hashes au sein d'un array
   result = [h.each {|k,v| Hash[k => v] }]
-  result
+  puts result
 end
 
-puts create_hashes 
+create_hashes 
